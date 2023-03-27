@@ -1,19 +1,29 @@
 \RequirePackage{plautopatch}
-\documentclass[a4paper,12pt]{jlreq}
+\documentclass[a4paper,12pt,dvipdfmx]{jlreq}
+%英語フォント
 \usepackage{tgtermes,tgheros,tgcursor}
-\usepackage[deluxe]{otf}
+%日本語を多書体にする
+\usepackage{jlreq-deluxe}
+%数式用
 \usepackage{amsmath}
 \usepackage[varg]{newtxmath}
-\renewcommand{\bfdefault}{bx}
 \newcommand{\symbb}{\vvmathbb}
+%日本語太字を戻すためのおまじない
+\renewcommand{\bfdefault}{bx}
+%図のとりこみ
+\usepackage{graphicx}
+
 
 \begin{document}
+
 \begin{center}
   \textbf{\sffamily \LARGE タイトル}
 \end{center}
+
 \begin{flushright}
   \textbf{\sffamily \Large 著者}  
 \end{flushright}
+
 \section{Section セクション}
 \subsection{Subsection サブセクション}
 色々書く
